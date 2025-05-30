@@ -19,14 +19,10 @@ dependencies {
     testImplementation 'org.assertj:assertj-core:3.25.3'
     implementation 'commons-io:commons-io:2.16.0'
     implementation 'org.apache.httpcomponents.client5:httpclient5:5.3.1'
-    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+    testImplementation 'io.rest-assured:rest-assured:5.5.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
     implementation 'io.rest-assured:json-schema-validator:5.4.0'
     implementation 'io.qameta.allure:allure-rest-assured:2.27.0'
-    compileOnly 'org.projectlombok:lombok:1.18.32'
-    annotationProcessor 'org.projectlombok:lombok:1.18.32'
-    testCompileOnly 'org.projectlombok:lombok:1.18.32'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32'
     implementation 'org.apache.pdfbox:pdfbox:2.0.31'
     implementation 'com.codeborne:selenide:7.3.1'
     implementation 'com.microsoft.playwright:playwright:1.43.0'
@@ -36,6 +32,12 @@ dependencies {
     implementation 'org.hibernate.orm:hibernate-core:6.5.2.Final'
     // https://mvnrepository.com/artifact/org.aspectj/aspectjweaver
     runtimeOnly("org.aspectj:aspectjweaver:1.9.23")
+
+    compileOnly("org.projectlombok:lombok:1.18.38")
+    annotationProcessor("org.projectlombok:lombok:1.18.38")
+
+    testCompileOnly("org.projectlombok:lombok:1.18.38")
+    testAnnotationProcessor("org.projectlombok:lombok:1.18.38")
 }
 
 test {
